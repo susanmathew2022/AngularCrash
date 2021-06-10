@@ -1,0 +1,13 @@
+ESlint
+prettier
+Code formatter
+vscode-icons
+Visual Studio  Intellicode
+RAML
+Javascript Booster
+Gitlens
+DotENV
+ColorHighlight
+Codesnap
+CodeSpellChecker
+Codetime
