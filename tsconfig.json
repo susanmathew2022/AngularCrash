@@ -1,5 +1,5 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
-{
+/* {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -28,10 +28,10 @@
     "strictTemplates": true
    
   }
-}
+} */
 
 
-/* {
+ {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -52,4 +52,4 @@
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
   }
-} */
+}
