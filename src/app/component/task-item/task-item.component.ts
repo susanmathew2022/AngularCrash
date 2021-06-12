@@ -21,7 +21,7 @@ export class TaskItemComponent implements OnInit {
   faTimes = faTimes;
 
   constructor() {
-
+console.log("cosntructor");
  //   this.task= new Task()
 
 
