@@ -2,8 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 
 //interface
 import {Task} from  '../../interfaces/Tasks'
-
-
+//fontawesome angular
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FaStackItemSizeDirective } from '@fortawesome/angular-fontawesome';
 class TaskItem implements  Task{
   constructor(public reminder:boolean =false,public   day:string ="", public text:string ="", public  id?:number  ){}
 }
@@ -16,7 +17,8 @@ export class TaskItemComponent implements OnInit {
 @Input() task: TaskItem = new  TaskItem(false,
   '',
   '',0);
-ishappy:boolean = true;
+
+  faTimes = faTimes;
 
   constructor() {
 
