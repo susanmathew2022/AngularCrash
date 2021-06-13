@@ -16,6 +16,7 @@ class TaskItem implements  Task{
 export class TaskItemComponent implements OnInit {
 @Input() task: TaskItem = new  TaskItem(false,  '',  '',0);
 @Output() ondeletetask: EventEmitter<Task> = new EventEmitter();
+@Output() onupdatetask: EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
 
   constructor() {
@@ -30,6 +31,8 @@ console.log("cosntructor");
   OnDelete(task){
     this.ondeletetask.emit(task);
   }
-
+  toggleReminder(task){
+ this.onupdatetask.emit(task)
+  }
 
 }

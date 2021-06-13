@@ -1,12 +1,23 @@
-<div [ngClass]="{reminder:task.reminder}" class="task" >
+<div [ngClass]="{reminder:task.reminder}" class="task"  (dblclick)="toggleReminder(task)">
 <!-- <h3 *ngIf="task.text">{{ task.text}}</h3>-->
 <!-- <h3>{{(task && task.day  ? task.day : "")}}</h3> -->
-<h3>{{ task.text}}
+
+
+<div class="flexrow">{{ task.text}}
+<div class="itemrow">
+  <label class="switch">
+    <input type="checkbox" (click)="toggleReminder(task)">
+    <span class="slider round"></span>
+  </label>
+
     <fa-icon
+    class="icon"
     (click)="OnDelete(task)"
     [ngStyle]="{color: 'red'}"
     [icon]="faTimes"
   ></fa-icon>
+</div>
+</div>
+<h3>{{ task.day}}   
 </h3>
-<h3>{{ task.day}}</h3>
 </div>
